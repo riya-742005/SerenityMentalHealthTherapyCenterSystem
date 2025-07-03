@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="invoiceAnchorPane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse71.serenitymentalhealththerapycentersystem.controller.InvoiceController">
+   <children>
+      <VBox layoutX="12.0" layoutY="12.0" prefHeight="576.0" prefWidth="575.0" style="-fx-border-color: blue; -fx-border-width: 2 2 2 2;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="574.0">
+               <children>
+                  <Label text="Invoice">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="12.0" layoutY="12.0" prefHeight="25.0" prefWidth="574.0">
+               <children>
+                  <Label fx:id="lblDate" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="94.0" text="Date">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="12.0" prefHeight="45.0" prefWidth="574.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="90.0" text="Patient Id">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lblPatientId" layoutX="250.0" layoutY="24.0" prefHeight="18.0" prefWidth="100.0" text="id" />
+                  <Label layoutX="297.0" layoutY="24.0" prefHeight="20.0" prefWidth="96.0" text="Payment Id :">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblPaymentId" layoutX="345.0" layoutY="24.0" prefHeight="18.0" prefWidth="66.0" text="id" />
+                  <Label layoutX="221.0" layoutY="23.0" prefHeight="20.0" prefWidth="96.0" text="Program Id">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lblProgramId" layoutX="317.0" layoutY="24.0" prefHeight="18.0" prefWidth="66.0" text="id" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="12.0" prefHeight="45.0" prefWidth="574.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="174.0" text="Program Fee">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblProgramFee" layoutX="239.0" layoutY="24.0" prefHeight="18.0" prefWidth="103.0" text="0.00">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="127.0" prefHeight="45.0" prefWidth="574.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="174.0" text="Advance Payment">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAdvancePayment" layoutX="239.0" layoutY="24.0" prefHeight="18.0" prefWidth="141.0" text="0.00">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="172.0" prefHeight="45.0" prefWidth="574.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="173.0" text="Session Fee">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSessionAmount" layoutX="239.0" layoutY="24.0" prefHeight="18.0" prefWidth="132.0" text="0.00">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="262.0" prefHeight="45.0" prefWidth="574.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="170.0" text="Remaining Amount">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRemainingAmount" layoutX="239.0" layoutY="24.0" prefHeight="18.0" prefWidth="132.0" text="0.00">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="574.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="295.0" text="Session Count">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSessionCount" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="192.0" text="0.00" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="475.0" prefHeight="51.0" prefWidth="574.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 1;">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="295.0" text="Total Session Fee">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTotalSessionFee" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="192.0" text="0.00">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="100.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

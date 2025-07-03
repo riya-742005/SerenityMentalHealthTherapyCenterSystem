@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane fx:id="homeAnchorPane" prefHeight="675.0" prefWidth="1280.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse71.serenitymentalhealththerapycentersystem.controller.HomeController">
+   <children>
+      <VBox layoutX="14.0" layoutY="34.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="147.0" prefWidth="1280.0">
+               <children>
+                  <Label fx:id="mainTopic" text="Welcome to The Serenity Mental Health Therapy Center " />
+               </children>
+            </HBox>
+            <PieChart fx:id="lblPieChart" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

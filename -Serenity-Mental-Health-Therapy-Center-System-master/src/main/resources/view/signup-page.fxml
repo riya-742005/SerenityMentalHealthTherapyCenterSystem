@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signupAnchorPane" prefHeight="675.0" prefWidth="1280.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse71.serenitymentalhealththerapycentersystem.controller.SignupController">
+   <children>
+      <VBox fx:id="signupPageVBox" alignment="TOP_CENTER" layoutX="220.0" layoutY="42.0" prefHeight="626.0" prefWidth="662.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="522.0">
+               <children>
+                  <Label fx:id="lblUserId" prefHeight="20.0" prefWidth="319.0" text="userId" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTopicSignup" text="Signup" textFill="#4cd162" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="522.0">
+               <children>
+                  <Label fx:id="lblFName" prefHeight="18.0" prefWidth="206.0" text="First Name" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtFName" prefHeight="34.0" prefWidth="522.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="80.0" prefHeight="71.0" prefWidth="522.0">
+               <children>
+                  <Label fx:id="lblLName" prefHeight="18.0" prefWidth="206.0" text="Last Name" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtLName" prefHeight="34.0" prefWidth="522.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="152.0" prefHeight="71.0" prefWidth="522.0">
+               <children>
+                  <Label fx:id="lblUserName" prefHeight="18.0" prefWidth="206.0" text="User Name" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtUserName" prefHeight="26.0" prefWidth="522.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="223.0" prefHeight="71.0" prefWidth="522.0">
+               <children>
+                  <Label fx:id="signupLblEmail" prefHeight="18.0" prefWidth="206.0" text="Email" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtSignupEmail" prefHeight="26.0" prefWidth="522.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="294.0" prefHeight="71.0" prefWidth="522.0">
+               <children>
+                  <Label fx:id="lblPassword" prefHeight="18.0" prefWidth="206.0" text="Password" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtPW" prefHeight="26.0" prefWidth="522.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="365.0" prefHeight="71.0" prefWidth="522.0">
+               <children>
+                  <Label fx:id="lblConfirmPW" prefHeight="18.0" prefWidth="206.0" text="Confirm Password" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtConfirmPW" prefHeight="26.0" prefWidth="522.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="522.0">
+               <children>
+                  <RadioButton fx:id="radioBtnAdmin" mnemonicParsing="false" onAction="#selectAdmin" prefHeight="31.0" prefWidth="137.0" text="Admin" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="rdBtnReceptionist" layoutX="228.0" layoutY="27.0" mnemonicParsing="false" onAction="#selectReceptionist" prefHeight="31.0" prefWidth="136.0" text="Receptionist" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="68.0" prefWidth="522.0">
+               <children>
+                  <Button fx:id="btnSignup" mnemonicParsing="false" onAction="#signupOnAction" text="Signup">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

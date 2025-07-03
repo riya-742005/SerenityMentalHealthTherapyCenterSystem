@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginPageAnchorPane" prefHeight="726.0" prefWidth="1280.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse71.serenitymentalhealththerapycentersystem.controller.LoginPageController">
+   <children>
+      <VBox fx:id="loginVBox" alignment="TOP_CENTER" layoutX="225.0" layoutY="76.0" prefHeight="497.0" prefWidth="500.0" AnchorPane.bottomAnchor="76.39999999999998" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="201.20000000000005" AnchorPane.topAnchor="76.39999999999998">
+         <children>
+            <HBox alignment="CENTER" prefHeight="66.0" prefWidth="500.0">
+               <children>
+                  <Text fx:id="lblLoginPageTopic" fill="#55c968" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="82.0" prefWidth="524.0">
+               <children>
+                  <Label fx:id="lblUserName" prefHeight="18.0" prefWidth="181.0" text="User Name" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtUserName" prefHeight="34.0" prefWidth="606.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="76.0" prefHeight="82.0" prefWidth="524.0">
+               <children>
+                  <Label fx:id="lblPassword" prefHeight="18.0" prefWidth="181.0" text="Password" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <PasswordField fx:id="txtPassword" onKeyTyped="#passwordKeyFieldType" prefHeight="34.0" prefWidth="608.0" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="75.0" prefWidth="524.0">
+               <children>
+                  <Label fx:id="lblShown" prefHeight="18.0" prefWidth="506.0" text="shown" textFill="WHITE" />
+                  <ToggleButton fx:id="btnShowPw" mnemonicParsing="false" onAction="#clickBtnShowPassword" prefHeight="26.0" prefWidth="90.0" text="Show" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="518.0" />
+            <HBox alignment="CENTER" prefHeight="89.0" prefWidth="518.0">
+               <children>
+                  <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="26.0" prefWidth="92.0" text="Login" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
