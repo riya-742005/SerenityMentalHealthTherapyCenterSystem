@@ -1,4 +1,5 @@
-**🧠 Serenity Mental Health Therapy Center System**
+#**🧠 Serenity Mental Health Therapy Center System**
+
 A desktop-based JavaFX application designed to manage login and registration for a mental health therapy center. Built with Java, JavaFX for the UI, Hibernate ORM for database interactions, and MySQL as the backend.
 
 **🎯  Preview** 
